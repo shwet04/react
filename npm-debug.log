@@ -1,0 +1,284 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'parcel-bundler' ]
+2 info using npm@2.15.11
+3 info using node@v4.8.4
+4 verbose install initial load of /usr/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/lib/package.json
+6 silly cache add args [ 'parcel-bundler', null ]
+7 verbose cache add spec parcel-bundler
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'parcel-bundler',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'parcel-bundler',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed parcel-bundler@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for parcel-bundler
+11 info addNameTag [ 'parcel-bundler', 'latest' ]
+12 silly mapToRegistry name parcel-bundler
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'parcel-bundler',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   name: 'parcel-bundler',
+15 silly mapToRegistry   rawSpec: '',
+15 silly mapToRegistry   spec: 'latest',
+15 silly mapToRegistry   type: 'tag' }
+16 silly mapToRegistry uri https://registry.npmjs.org/parcel-bundler
+17 verbose addNameTag registry:https://registry.npmjs.org/parcel-bundler not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/parcel-bundler
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 11:27:46 PM
+21 verbose request id 84e78efdbb1fc182
+22 verbose etag W/"ca74145a4b0cfc21582490d97758530d"
+23 verbose lastModified Thu, 11 Oct 2018 17:08:02 GMT
+24 http request GET https://registry.npmjs.org/parcel-bundler
+25 http 304 https://registry.npmjs.org/parcel-bundler
+26 verbose headers { date: 'Mon, 05 Nov 2018 17:57:46 GMT',
+26 verbose headers   connection: 'keep-alive',
+26 verbose headers   'set-cookie': [ '__cfduid=d926d52b35227c11ce47949dbad73d7881541440666; expires=Tue, 05-Nov-19 17:57:46 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+26 verbose headers   'cf-cache-status': 'HIT',
+26 verbose headers   'cache-control': 'max-age=300',
+26 verbose headers   'cf-ray': '47513464ab622df1-BOM',
+26 verbose headers   etag: '"ca74145a4b0cfc21582490d97758530d"',
+26 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+26 verbose headers   'last-modified': 'Thu, 11 Oct 2018 17:08:02 GMT',
+26 verbose headers   vary: 'accept-encoding, accept',
+26 verbose headers   'x-amz-meta-rev': '71-d36a25060dfe1f490085b46de565bc57',
+26 verbose headers   server: 'cloudflare' }
+27 silly get cb [ 304,
+27 silly get   { date: 'Mon, 05 Nov 2018 17:57:46 GMT',
+27 silly get     connection: 'keep-alive',
+27 silly get     'set-cookie': [ '__cfduid=d926d52b35227c11ce47949dbad73d7881541440666; expires=Tue, 05-Nov-19 17:57:46 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+27 silly get     'cf-cache-status': 'HIT',
+27 silly get     'cache-control': 'max-age=300',
+27 silly get     'cf-ray': '47513464ab622df1-BOM',
+27 silly get     etag: '"ca74145a4b0cfc21582490d97758530d"',
+27 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+27 silly get     'last-modified': 'Thu, 11 Oct 2018 17:08:02 GMT',
+27 silly get     vary: 'accept-encoding, accept',
+27 silly get     'x-amz-meta-rev': '71-d36a25060dfe1f490085b46de565bc57',
+27 silly get     server: 'cloudflare' } ]
+28 verbose etag https://registry.npmjs.org/parcel-bundler from cache
+29 verbose get saving parcel-bundler to /home/shweta/.npm/registry.npmjs.org/parcel-bundler/.cache.json
+30 verbose correctMkdir /home/shweta/.npm correctMkdir not in flight; initializing
+31 silly addNameTag next cb for parcel-bundler with tag latest
+32 silly addNamed parcel-bundler@1.10.3
+33 verbose addNamed "1.10.3" is a plain semver version for parcel-bundler
+34 silly cache afterAdd parcel-bundler@1.10.3
+35 verbose afterAdd /home/shweta/.npm/parcel-bundler/1.10.3/package/package.json not in flight; writing
+36 verbose correctMkdir /home/shweta/.npm correctMkdir not in flight; initializing
+37 verbose afterAdd /home/shweta/.npm/parcel-bundler/1.10.3/package/package.json written
+38 silly install resolved [ { name: 'parcel-bundler',
+38 silly install resolved     version: '1.10.3',
+38 silly install resolved     description: 'Blazing fast, zero configuration web application bundler',
+38 silly install resolved     main: 'index.js',
+38 silly install resolved     license: 'MIT',
+38 silly install resolved     repository:
+38 silly install resolved      { type: 'git',
+38 silly install resolved        url: 'git+https://github.com/parcel-bundler/parcel.git' },
+38 silly install resolved     dependencies:
+38 silly install resolved      { '@babel/code-frame': '^7.0.0',
+38 silly install resolved        '@babel/core': '^7.0.0',
+38 silly install resolved        '@babel/generator': '^7.0.0',
+38 silly install resolved        '@babel/parser': '^7.0.0',
+38 silly install resolved        '@babel/plugin-transform-flow-strip-types': '^7.0.0',
+38 silly install resolved        '@babel/plugin-transform-modules-commonjs': '^7.0.0',
+38 silly install resolved        '@babel/plugin-transform-react-jsx': '^7.0.0',
+38 silly install resolved        '@babel/preset-env': '^7.0.0',
+38 silly install resolved        '@babel/runtime': '^7.0.0',
+38 silly install resolved        '@babel/template': '^7.0.0',
+38 silly install resolved        '@babel/traverse': '^7.0.0',
+38 silly install resolved        '@babel/types': '^7.0.0',
+38 silly install resolved        'ansi-to-html': '^0.6.4',
+38 silly install resolved        'babylon-walk': '^1.0.2',
+38 silly install resolved        browserslist: '^4.1.0',
+38 silly install resolved        chalk: '^2.1.0',
+38 silly install resolved        clone: '^2.1.1',
+38 silly install resolved        'command-exists': '^1.2.6',
+38 silly install resolved        commander: '^2.11.0',
+38 silly install resolved        'cross-spawn': '^6.0.4',
+38 silly install resolved        cssnano: '^4.0.0',
+38 silly install resolved        deasync: '^0.1.13',
+38 silly install resolved        dotenv: '^5.0.0',
+38 silly install resolved        'dotenv-expand': '^4.2.0',
+38 silly install resolved        'fast-glob': '^2.2.2',
+38 silly install resolved        filesize: '^3.6.0',
+38 silly install resolved        'fswatcher-child': '^1.0.5',
+38 silly install resolved        'get-port': '^3.2.0',
+38 silly install resolved        'grapheme-breaker': '^0.3.2',
+38 silly install resolved        htmlnano: '^0.1.9',
+38 silly install resolved        'is-glob': '^4.0.0',
+38 silly install resolved        'is-url': '^1.2.2',
+38 silly install resolved        'js-yaml': '^3.10.0',
+38 silly install resolved        json5: '^1.0.1',
+38 silly install resolved        micromatch: '^3.0.4',
+38 silly install resolved        mkdirp: '^0.5.1',
+38 silly install resolved        'node-forge': '^0.7.1',
+38 silly install resolved        'node-libs-browser': '^2.0.0',
+38 silly install resolved        opn: '^5.1.0',
+38 silly install resolved        ora: '^2.1.0',
+38 silly install resolved        'physical-cpu-count': '^2.0.0',
+38 silly install resolved        postcss: '^6.0.19',
+38 silly install resolved        'postcss-value-parser': '^3.3.0',
+38 silly install resolved        posthtml: '^0.11.2',
+38 silly install resolved        'posthtml-parser': '^0.4.0',
+38 silly install resolved        'posthtml-render': '^1.1.3',
+38 silly install resolved        resolve: '^1.4.0',
+38 silly install resolved        semver: '^5.4.1',
+38 silly install resolved        'serialize-to-js': '^1.1.1',
+38 silly install resolved        'serve-static': '^1.12.4',
+38 silly install resolved        'source-map': '0.6.1',
+38 silly install resolved        'strip-ansi': '^4.0.0',
+38 silly install resolved        terser: '^3.7.3',
+38 silly install resolved        toml: '^2.3.3',
+38 silly install resolved        'tomlify-j0.4': '^3.0.0',
+38 silly install resolved        'v8-compile-cache': '^2.0.0',
+38 silly install resolved        ws: '^5.1.1' },
+38 silly install resolved     devDependencies:
+38 silly install resolved      { '@babel/cli': '^7.0.0',
+38 silly install resolved        '@babel/plugin-syntax-export-default-from': '^7.0.0',
+38 silly install resolved        '@babel/plugin-syntax-export-namespace-from': '^7.0.0',
+38 silly install resolved        '@babel/plugin-transform-runtime': '^7.0.0',
+38 silly install resolved        '@babel/preset-flow': '^7.0.0',
+38 silly install resolved        '@babel/register': '^7.0.0',
+38 silly install resolved        '@vue/component-compiler-utils': '^2.0.0',
+38 silly install resolved        'babel-core': '^6.26.3',
+38 silly install resolved        'babel-preset-env': '^1.7.0',
+38 silly install resolved        babylon: '^6.18.0',
+38 silly install resolved        'bsb-js': '^1.0.1',
+38 silly install resolved        codecov: '^3.0.0',
+38 silly install resolved        coffeescript: '^2.0.3',
+38 silly install resolved        'cross-env': '^5.1.1',
+38 silly install resolved        elm: '^0.19.0',
+38 silly install resolved        eslint: '^4.13.0',
+38 silly install resolved        'glslify-bundle': '^5.0.0',
+38 silly install resolved        'glslify-deps': '^1.3.0',
+38 silly install resolved        graphql: '^0.11.7',
+38 silly install resolved        'graphql-tag': '^2.6.0',
+38 silly install resolved        husky: '^0.14.3',
+38 silly install resolved        less: '^3.0.1',
+38 silly install resolved        'lint-staged': '^7.1.2',
+38 silly install resolved        mocha: '^5.1.1',
+38 silly install resolved        ncp: '^2.0.0',
+38 silly install resolved        nib: '^1.1.2',
+38 silly install resolved        'node-elm-compiler': '^5.0.1',
+38 silly install resolved        nyc: '^11.1.0',
+38 silly install resolved        'postcss-modules': '^1.1.0',
+38 silly install resolved        'posthtml-extend': '^0.2.1',
+38 silly install resolved        'posthtml-include': '^1.1.0',
+38 silly install resolved        prettier: '^1.13.0',
+38 silly install resolved        pug: '^2.0.3',
+38 silly install resolved        rimraf: '^2.6.1',
+38 silly install resolved        sass: '^1.10.2',
+38 silly install resolved        sinon: '^5.0.1',
+38 silly install resolved        'sourcemap-validator': '^1.0.6',
+38 silly install resolved        stylus: '^0.54.5',
+38 silly install resolved        sugarss: '^2.0.0',
+38 silly install resolved        typescript: '^3.0.0',
+38 silly install resolved        vue: '^2.5.16',
+38 silly install resolved        'vue-template-compiler': '^2.5.16' },
+38 silly install resolved     scripts:
+38 silly install resolved      { test: 'cross-env NODE_ENV=test mocha',
+38 silly install resolved        'test-coverage': 'rm -rf coverage/* && nyc yarn test',
+38 silly install resolved        'report-coverage': 'nyc report --reporter=lcov && codecov',
+38 silly install resolved        'test-ci': 'yarn test-coverage && yarn report-coverage',
+38 silly install resolved        format: 'prettier --write "./{src,bin,test}/**/*.{js,json,md}"',
+38 silly install resolved        build: 'yarn minify && babel src -d lib && ncp src/builtins lib/builtins',
+38 silly install resolved        prepublish: 'yarn build',
+38 silly install resolved        minify: 'terser -c -m -o src/builtins/prelude.min.js src/builtins/prelude.js && terser -c -m -o src/builtins/prelude2.min.js src/builtins/prelude2.js',
+38 silly install resolved        precommit: 'lint-staged',
+38 silly install resolved        lint: 'eslint . && prettier "./{src,bin,test}/**/*.{js,json,md}" --list-different',
+38 silly install resolved        postinstall: 'node -e "console.log(\'\\u001b[35m\\u001b[1mLove Parcel? You can now donate to our open collective:\\u001b[22m\\u001b[39m\\n > \\u001b[34mhttps://opencollective.com/parcel/donate\\u001b[0m\')"',
+38 silly install resolved        clean: 'rm -rf node_modules lib && yarn' },
+38 silly install resolved     bin: { parcel: 'bin/cli.js' },
+38 silly install resolved     engines: { node: '>= 6.0.0' },
+38 silly install resolved     'lint-staged': { '*.{js,json,md}': [Object] },
+38 silly install resolved     collective:
+38 silly install resolved      { type: 'opencollective',
+38 silly install resolved        url: 'https://opencollective.com/parcel' },
+38 silly install resolved     gitHead: 'a0df88665f00330c0f8265233308d1a590087868',
+38 silly install resolved     bugs: { url: 'https://github.com/parcel-bundler/parcel/issues' },
+38 silly install resolved     homepage: 'https://github.com/parcel-bundler/parcel#readme',
+38 silly install resolved     _id: 'parcel-bundler@1.10.3',
+38 silly install resolved     _shasum: '8502b40d3f23139093b25e82658f6060f025c024',
+38 silly install resolved     _from: 'parcel-bundler@latest',
+38 silly install resolved     _npmVersion: '3.10.10',
+38 silly install resolved     _nodeVersion: '6.11.1',
+38 silly install resolved     _npmUser: { name: 'devongovett', email: 'devongovett@gmail.com' },
+38 silly install resolved     dist:
+38 silly install resolved      { shasum: '8502b40d3f23139093b25e82658f6060f025c024',
+38 silly install resolved        tarball: 'https://registry.npmjs.org/parcel-bundler/-/parcel-bundler-1.10.3.tgz',
+38 silly install resolved        integrity: 'sha512-Lj31fr5o2AZFbazghL/MrubzvJEXLwx24rd3MiR3lncmqCXbd5q0hgl1kpV6X+vRaN9/cSDR8G0lotmgl5OyZg==',
+38 silly install resolved        fileCount: 255,
+38 silly install resolved        unpackedSize: 825400,
+38 silly install resolved        'npm-signature': '-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbv4NuCRA9TVsSAnZWagAAk4IP/RwRzs1dvL7NTZJ1KDGP\n7QKHxo62QaM+meevRWzcXyG3q9kFqWjGdiEldjKcWnTf/Gg7L8MpvDRGjDGp\nyLs5Sz6JMMw74X1/Lhpp8WaCr2OCre2cv/ZR10Ybk9AW14F6ixIA2FC7huaA\ntM340gWly21liK5V5tX2uOQ4BLE/wlZU9HB78cS2y/UClGng6+xytyXloII9\nrth+SIkGzyyZhxUJJ8XlSJitEpggWSW9Z4L10nYpid25mXtm+VM3WG7YOUxW\neMViclmwNULqzi7JJP90XQXtCu8f9c40AyQ/Bo67/jRZqYggwOIHHY+vV8jX\nVknRa9T4dXRdGZUV94YijwrAkA5Z4wG6esYNPJUYnK6RakL37QxcFV4s+MRv\nG9tUMdZ3IcfoKPcnwJqPG6rI2GsBRlTd4aWXAQZAlRGz45X8rM8AhXEFWfB7\nz0bKm2BEv1Lrr8/XTBiAiufVJ4C3DKQkrO7UnksmNUotJS+8Jh7rET4KlH0j\nL9BS6qzxlmx7acGcXobekUGT2VL7N8086voV6wWj2kCnyILzfbrk7NQXGkvR\nEKywQFQ4L81u1/e9AUISpl/cRDK1bqQKF1thMaGvczoSl3RELxb3+v/GLCbo\nEmaN/bOg+jpogcYDzws4WTNjTOqoz8M1wjPSDmBBXrUr3RVrxkxFhufX+d45\nZcqV\r\n=gzkP\r\n-----END PGP SIGNATURE-----\r\n' },
+38 silly install resolved     maintainers: [ [Object] ],
+38 silly install resolved     directories: {},
+38 silly install resolved     _npmOperationalInternal:
+38 silly install resolved      { host: 's3://npm-registry-packages',
+38 silly install resolved        tmp: 'tmp/parcel-bundler_1.10.3_1539277677195_0.9989076208882575' },
+38 silly install resolved     _hasShrinkwrap: false,
+38 silly install resolved     _resolved: 'https://registry.npmjs.org/parcel-bundler/-/parcel-bundler-1.10.3.tgz',
+38 silly install resolved     readme: 'ERROR: No README data found!' } ]
+39 info install parcel-bundler@1.10.3 into /usr/lib
+40 info installOne parcel-bundler@1.10.3
+41 verbose installOne of parcel-bundler to /usr/lib not in flight; installing
+42 verbose correctMkdir /home/shweta/.npm/_locks correctMkdir not in flight; initializing
+43 verbose lock using /home/shweta/.npm/_locks/parcel-bundler-da2ac651697ed12f.lock for /usr/lib/node_modules/parcel-bundler
+44 warn engine parcel-bundler@1.10.3: wanted: {"node":">= 6.0.0"} (current: {"node":"4.8.4","npm":"2.15.11"})
+45 silly install write writing parcel-bundler 1.10.3 to /usr/lib/node_modules/parcel-bundler
+46 verbose unbuild lib/node_modules/parcel-bundler
+47 info preuninstall parcel-bundler@1.10.3
+48 info uninstall parcel-bundler@1.10.3
+49 verbose unbuild rmStuff parcel-bundler@1.10.3 from /usr/lib/node_modules
+50 silly gentlyRm /usr/bin/parcel is being gently removed
+51 silly gentlyRm verifying /usr is an npm working directory
+52 silly gentlyRm containing path /usr is under npm's control, in /usr
+53 silly gentlyRm deletion target /usr/bin/parcel is under /usr
+54 verbose gentlyRm vacuuming from /usr/bin/parcel up to /usr
+55 silly vacuum-fs removing /usr/bin/parcel
+56 verbose unlock done using /home/shweta/.npm/_locks/parcel-bundler-da2ac651697ed12f.lock for /usr/lib/node_modules/parcel-bundler
+57 verbose stack Error: EACCES: permission denied, unlink '/usr/bin/parcel'
+57 verbose stack     at Error (native)
+58 verbose cwd /home/shweta/Desktop/fem
+59 error Linux 3.19.0-25-generic
+60 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "-g" "parcel-bundler"
+61 error node v4.8.4
+62 error npm  v2.15.11
+63 error path /usr/bin/parcel
+64 error code EACCES
+65 error errno -13
+66 error syscall unlink
+67 error Error: EACCES: permission denied, unlink '/usr/bin/parcel'
+67 error     at Error (native)
+67 error  { [Error: EACCES: permission denied, unlink '/usr/bin/parcel']
+67 error   errno: -13,
+67 error   code: 'EACCES',
+67 error   syscall: 'unlink',
+67 error   path: '/usr/bin/parcel' }
+68 error Please try running this command again as root/Administrator.
+69 verbose exit [ -13, true ]
+70 verbose unbuild lib/node_modules/parcel-bundler
+71 info preuninstall parcel-bundler@1.10.3
+72 info uninstall parcel-bundler@1.10.3
+73 verbose unbuild rmStuff parcel-bundler@1.10.3 from /usr/lib/node_modules
+74 silly gentlyRm /usr/bin/parcel is being gently removed
+75 silly gentlyRm verifying /usr is an npm working directory
+76 silly gentlyRm containing path /usr is under npm's control, in /usr
+77 silly gentlyRm deletion target /usr/bin/parcel is under /usr
+78 verbose gentlyRm vacuuming from /usr/bin/parcel up to /usr
+79 silly vacuum-fs removing /usr/bin/parcel
+80 error error rolling back Error: EACCES: permission denied, unlink '/usr/bin/parcel'
+80 error error rolling back     at Error (native)
+80 error error rolling back  { [Error: EACCES: permission denied, unlink '/usr/bin/parcel']
+80 error error rolling back   errno: -13,
+80 error error rolling back   code: 'EACCES',
+80 error error rolling back   syscall: 'unlink',
+80 error error rolling back   path: '/usr/bin/parcel' }
